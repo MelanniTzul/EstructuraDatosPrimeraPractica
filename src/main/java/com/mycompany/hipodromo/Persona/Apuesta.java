@@ -9,6 +9,9 @@ public class Apuesta {
     private double Monto;//Cantidad que va a apostar por el caballo
     private int[] ArrayPocisiones;
     private int puntos;
+    //Atributos para poder manejar la lista enlazada doble
+    Apuesta siguiente;
+    Apuesta anterior;
     
 
     public Apuesta() {
@@ -54,6 +57,24 @@ public class Apuesta {
     public void setPuntos(int puntos) {
         this.puntos = puntos;
     }
+
+    public Apuesta getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Apuesta Siguiente) {
+        this.siguiente = Siguiente;
+    }
+
+    public Apuesta getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(Apuesta Anterior) {
+        this.anterior = Anterior;
+    }
+    
+    
     
  
 
